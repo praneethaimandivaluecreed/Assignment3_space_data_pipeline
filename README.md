@@ -101,14 +101,6 @@ The raw data is preserved so that the transformation layer can be re-run if tran
 
 This avoids making the transformation process dependent on a fresh API request every time the transformation logic is modified.
 
-### Development Extraction Limit
-
-During development and testing, the launches endpoint is configured to retrieve two pages with a page size of 100 records.
-
-This allows the pipeline to be tested using a controlled amount of data while retaining the pagination logic required for larger datasets.
-
-The pipeline also includes logging, error handling, retry logic, transaction handling, idempotent loading, and validation checks to ensure that successful script execution does not automatically mean that the pipeline produced valid data.
-
 ## Transformation Approach
 
 The transformation layer reads the preserved raw JSON data, cleans and standardizes the records, handles duplicates and missing values, validates relationships, creates derived fields, and saves the processed datasets as CSV files.
