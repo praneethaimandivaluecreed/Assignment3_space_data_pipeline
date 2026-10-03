@@ -108,3 +108,25 @@ During development and testing, the launches endpoint is configured to retrieve 
 This allows the pipeline to be tested using a controlled amount of data while retaining the pagination logic required for larger datasets.
 
 The pipeline also includes logging, error handling, retry logic, transaction handling, idempotent loading, and validation checks to ensure that successful script execution does not automatically mean that the pipeline produced valid data.
+
+## Transformation Approach
+
+The transformation layer reads the preserved raw JSON data, cleans and standardizes the records, handles duplicates and missing values, validates relationships, creates derived fields, and saves the processed datasets as CSV files.
+
+### Key Transformations
+
+- Extract required fields from nested JSON objects.
+- Remove duplicate records using primary keys.
+- Standardize text and data types.
+- Filter invalid launch records.
+- Validate foreign-key relationships.
+- Save transformed data to `data/processed/`.
+
+### Derived Columns
+
+- `launch_year` and `launch_month` — extracted from the launch date.
+- `launch_quarter` — groups launches into Q1–Q4.
+- `status_category` — groups launch statuses into Successful, Failure, Partial Failure, etc.
+- `orbit_class` — groups detailed orbit types into broader categories such as Earth Orbit and Lunar/Planetary.
+- `pad_turnaround_days` — days between consecutive launches from the same pad.
+- `agency_launch_gap_days` — days between consecutive launches by the same agency.
