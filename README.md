@@ -7,23 +7,23 @@ The pipeline retrieves launch-related data from an external space API, preserves
 
 The pipeline follows this flow:
 
-Space API
-↓
-EXTRACT
-↓
-Raw JSON Data
-↓
-TRANSFORM
-↓
-Processed Data
-↓
-VALIDATE
-↓
-LOAD
-↓
-SQL Server Database
-↓
-Database Validation and Analytical Queries
+                           Space API
+                              ↓
+                           EXTRACT
+                              ↓
+                           Raw JSON Data
+                              ↓
+                           TRANSFORM
+                              ↓
+                           Processed Data
+                              ↓
+                           VALIDATE
+                              ↓
+                           LOAD
+                              ↓
+                           SQL Server Database
+                              ↓
+                           Database Validation and Analytical Queries
 
 The pipeline is designed to be repeatable and reliable. Raw API responses are stored separately from processed data so that transformation logic can be changed and the previously extracted data can be processed again without depending on another API request.
 
