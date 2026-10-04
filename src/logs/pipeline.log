@@ -1,0 +1,478 @@
+2026-10-03 23:01:09,332 | INFO | ======================================================================
+2026-10-03 23:01:09,333 | INFO | SPACE DATA EXTRACTION PIPELINE STARTED
+2026-10-03 23:01:09,333 | INFO | ======================================================================
+2026-10-03 23:01:09,333 | INFO | Raw data directory: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw
+2026-10-03 23:01:09,333 | INFO | ======================================================================
+2026-10-03 23:01:09,333 | INFO | EXTRACTING: LAUNCHES
+2026-10-03 23:01:09,333 | INFO | ======================================================================
+2026-10-03 23:01:09,334 | INFO | Raw data directory: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launches
+2026-10-03 23:01:09,335 | INFO | Requesting page 1
+2026-10-03 23:01:09,335 | INFO | URL: https://ll.thespacedevs.com/2.3.0/launches/
+2026-10-03 23:01:13,447 | INFO | HTTP Status: 200
+2026-10-03 23:01:13,487 | INFO | Raw data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launches\page_1.json
+2026-10-03 23:01:13,487 | INFO | Records in page: 100
+2026-10-03 23:01:13,487 | INFO | Total records retrieved: 100
+2026-10-03 23:01:13,487 | INFO | Next page available.
+2026-10-03 23:01:13,488 | INFO | Requesting page 2
+2026-10-03 23:01:13,488 | INFO | URL: https://ll.thespacedevs.com/2.3.0/launches/?limit=100&offset=100
+2026-10-03 23:01:16,567 | INFO | HTTP Status: 200
+2026-10-03 23:01:16,606 | INFO | Raw data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launches\page_2.json
+2026-10-03 23:01:16,606 | INFO | Records in page: 100
+2026-10-03 23:01:16,607 | INFO | Total records retrieved: 200
+2026-10-03 23:01:16,607 | INFO | Next page available.
+2026-10-03 23:01:16,607 | INFO | Extraction completed for launches.
+2026-10-03 23:01:16,607 | INFO | Total launches records retrieved: 200
+2026-10-03 23:01:16,608 | INFO | ======================================================================
+2026-10-03 23:01:16,608 | INFO | EXTRACTING: LAUNCHER_CONFIGURATIONS
+2026-10-03 23:01:16,608 | INFO | ======================================================================
+2026-10-03 23:01:16,609 | INFO | Raw data directory: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations
+2026-10-03 23:01:16,609 | INFO | Requesting page 1
+2026-10-03 23:01:16,609 | INFO | URL: https://ll.thespacedevs.com/2.3.0/launcher_configurations/
+2026-10-03 23:01:17,810 | INFO | HTTP Status: 200
+2026-10-03 23:01:17,848 | INFO | Raw data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations\page_1.json
+2026-10-03 23:01:17,848 | INFO | Records in page: 100
+2026-10-03 23:01:17,848 | INFO | Total records retrieved: 100
+2026-10-03 23:01:17,848 | INFO | Next page available.
+2026-10-03 23:01:17,848 | INFO | Requesting page 2
+2026-10-03 23:01:17,848 | INFO | URL: https://ll.thespacedevs.com/2.3.0/launcher_configurations/?limit=100&offset=100
+2026-10-03 23:01:20,025 | INFO | HTTP Status: 200
+2026-10-03 23:01:20,067 | INFO | Raw data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations\page_2.json
+2026-10-03 23:01:20,067 | INFO | Records in page: 100
+2026-10-03 23:01:20,067 | INFO | Total records retrieved: 200
+2026-10-03 23:01:20,068 | INFO | Next page available.
+2026-10-03 23:01:20,068 | INFO | Requesting page 3
+2026-10-03 23:01:20,068 | INFO | URL: https://ll.thespacedevs.com/2.3.0/launcher_configurations/?limit=100&offset=200
+2026-10-03 23:01:22,900 | INFO | HTTP Status: 200
+2026-10-03 23:01:22,942 | INFO | Raw data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations\page_3.json
+2026-10-03 23:01:22,943 | INFO | Records in page: 100
+2026-10-03 23:01:22,943 | INFO | Total records retrieved: 300
+2026-10-03 23:01:22,943 | INFO | Next page available.
+2026-10-03 23:01:22,944 | INFO | Requesting page 4
+2026-10-03 23:01:22,944 | INFO | URL: https://ll.thespacedevs.com/2.3.0/launcher_configurations/?limit=100&offset=300
+2026-10-03 23:01:29,655 | INFO | HTTP Status: 200
+2026-10-03 23:01:29,685 | INFO | Raw data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations\page_4.json
+2026-10-03 23:01:29,685 | INFO | Records in page: 100
+2026-10-03 23:01:29,685 | INFO | Total records retrieved: 400
+2026-10-03 23:01:29,687 | INFO | Next page available.
+2026-10-03 23:01:29,687 | INFO | Requesting page 5
+2026-10-03 23:01:29,687 | INFO | URL: https://ll.thespacedevs.com/2.3.0/launcher_configurations/?limit=100&offset=400
+2026-10-03 23:01:31,903 | INFO | HTTP Status: 200
+2026-10-03 23:01:31,930 | INFO | Raw data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations\page_5.json
+2026-10-03 23:01:31,930 | INFO | Records in page: 100
+2026-10-03 23:01:31,930 | INFO | Total records retrieved: 500
+2026-10-03 23:01:31,930 | INFO | Next page available.
+2026-10-03 23:01:31,930 | INFO | Requesting page 6
+2026-10-03 23:01:31,930 | INFO | URL: https://ll.thespacedevs.com/2.3.0/launcher_configurations/?limit=100&offset=500
+2026-10-03 23:01:35,999 | INFO | HTTP Status: 200
+2026-10-03 23:01:36,013 | INFO | Raw data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations\page_6.json
+2026-10-03 23:01:36,013 | INFO | Records in page: 32
+2026-10-03 23:01:36,015 | INFO | Total records retrieved: 532
+2026-10-03 23:01:36,015 | INFO | No more pages available.
+2026-10-03 23:01:36,015 | INFO | Extraction completed for launcher_configurations.
+2026-10-03 23:01:36,015 | INFO | Total launcher_configurations records retrieved: 532
+2026-10-03 23:01:36,015 | INFO | ======================================================================
+2026-10-03 23:01:36,015 | INFO | EXTRACTING: AGENCIES
+2026-10-03 23:01:36,015 | INFO | ======================================================================
+2026-10-03 23:01:36,016 | INFO | Raw data directory: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\agencies
+2026-10-03 23:01:36,016 | INFO | Requesting page 1
+2026-10-03 23:01:36,017 | INFO | URL: https://ll.thespacedevs.com/2.3.0/agencies/
+2026-10-03 23:01:37,740 | INFO | HTTP Status: 200
+2026-10-03 23:01:37,753 | INFO | Raw data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\agencies\page_1.json
+2026-10-03 23:01:37,753 | INFO | Records in page: 100
+2026-10-03 23:01:37,754 | INFO | Total records retrieved: 100
+2026-10-03 23:01:37,754 | INFO | Next page available.
+2026-10-03 23:01:37,754 | INFO | Requesting page 2
+2026-10-03 23:01:37,754 | INFO | URL: https://ll.thespacedevs.com/2.3.0/agencies/?limit=100&offset=100
+2026-10-03 23:01:40,077 | INFO | HTTP Status: 200
+2026-10-03 23:01:40,090 | INFO | Raw data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\agencies\page_2.json
+2026-10-03 23:01:40,090 | INFO | Records in page: 100
+2026-10-03 23:01:40,090 | INFO | Total records retrieved: 200
+2026-10-03 23:01:40,090 | INFO | Next page available.
+2026-10-03 23:01:40,090 | INFO | Requesting page 3
+2026-10-03 23:01:40,091 | INFO | URL: https://ll.thespacedevs.com/2.3.0/agencies/?limit=100&offset=200
+2026-10-03 23:01:42,963 | INFO | HTTP Status: 200
+2026-10-03 23:01:42,975 | INFO | Raw data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\agencies\page_3.json
+2026-10-03 23:01:42,975 | INFO | Records in page: 100
+2026-10-03 23:01:42,976 | INFO | Total records retrieved: 300
+2026-10-03 23:01:42,976 | INFO | Next page available.
+2026-10-03 23:01:42,976 | INFO | Requesting page 4
+2026-10-03 23:01:42,976 | INFO | URL: https://ll.thespacedevs.com/2.3.0/agencies/?limit=100&offset=300
+2026-10-03 23:01:44,909 | INFO | HTTP Status: 200
+2026-10-03 23:01:44,919 | INFO | Raw data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\agencies\page_4.json
+2026-10-03 23:01:44,919 | INFO | Records in page: 50
+2026-10-03 23:01:44,920 | INFO | Total records retrieved: 350
+2026-10-03 23:01:44,920 | INFO | No more pages available.
+2026-10-03 23:01:44,920 | INFO | Extraction completed for agencies.
+2026-10-03 23:01:44,921 | INFO | Total agencies records retrieved: 350
+2026-10-03 23:01:44,921 | INFO | ======================================================================
+2026-10-03 23:01:44,922 | INFO | EXTRACTING: PADS
+2026-10-03 23:01:44,922 | INFO | ======================================================================
+2026-10-03 23:01:44,923 | INFO | Raw data directory: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\pads
+2026-10-03 23:01:44,923 | INFO | Requesting page 1
+2026-10-03 23:01:44,923 | INFO | URL: https://ll.thespacedevs.com/2.3.0/pads/
+2026-10-03 23:01:47,672 | INFO | HTTP Status: 200
+2026-10-03 23:01:47,704 | INFO | Raw data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\pads\page_1.json
+2026-10-03 23:01:47,704 | INFO | Records in page: 100
+2026-10-03 23:01:47,704 | INFO | Total records retrieved: 100
+2026-10-03 23:01:47,705 | INFO | Next page available.
+2026-10-03 23:01:47,705 | INFO | Requesting page 2
+2026-10-03 23:01:47,705 | INFO | URL: https://ll.thespacedevs.com/2.3.0/pads/?limit=100&offset=100
+2026-10-03 23:01:57,052 | INFO | HTTP Status: 200
+2026-10-03 23:01:57,076 | INFO | Raw data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\pads\page_2.json
+2026-10-03 23:01:57,077 | INFO | Records in page: 100
+2026-10-03 23:01:57,077 | INFO | Total records retrieved: 200
+2026-10-03 23:01:57,077 | INFO | Next page available.
+2026-10-03 23:01:57,077 | INFO | Requesting page 3
+2026-10-03 23:01:57,077 | INFO | URL: https://ll.thespacedevs.com/2.3.0/pads/?limit=100&offset=200
+2026-10-03 23:02:00,244 | INFO | HTTP Status: 200
+2026-10-03 23:02:00,267 | INFO | Raw data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\pads\page_3.json
+2026-10-03 23:02:00,267 | INFO | Records in page: 51
+2026-10-03 23:02:00,267 | INFO | Total records retrieved: 251
+2026-10-03 23:02:00,267 | INFO | No more pages available.
+2026-10-03 23:02:00,267 | INFO | Extraction completed for pads.
+2026-10-03 23:02:00,268 | INFO | Total pads records retrieved: 251
+2026-10-03 23:02:00,268 | INFO | ======================================================================
+2026-10-03 23:02:00,268 | INFO | EXTRACTION SUMMARY
+2026-10-03 23:02:00,268 | INFO | ======================================================================
+2026-10-03 23:02:00,268 | INFO | launches: 200 records
+2026-10-03 23:02:00,268 | INFO | launcher_configurations: 532 records
+2026-10-03 23:02:00,268 | INFO | agencies: 350 records
+2026-10-03 23:02:00,268 | INFO | pads: 251 records
+2026-10-03 23:02:00,268 | INFO | ======================================================================
+2026-10-03 23:02:00,268 | INFO | SPACE DATA EXTRACTION PIPELINE FINISHED
+2026-10-03 23:02:00,269 | INFO | ======================================================================
+2026-10-03 23:27:17,430 | INFO | ======================================================================
+2026-10-03 23:27:17,431 | INFO | SPACE DATA TRANSFORMATION PIPELINE STARTED
+2026-10-03 23:27:17,431 | INFO | ======================================================================
+2026-10-03 23:27:17,431 | INFO | Reading raw dataset: agencies
+2026-10-03 23:27:17,432 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\agencies\page_1.json
+2026-10-03 23:27:17,451 | INFO | Records loaded from file: 100
+2026-10-03 23:27:17,452 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\agencies\page_2.json
+2026-10-03 23:27:17,476 | INFO | Records loaded from file: 100
+2026-10-03 23:27:17,476 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\agencies\page_3.json
+2026-10-03 23:27:17,497 | INFO | Records loaded from file: 100
+2026-10-03 23:27:17,497 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\agencies\page_4.json
+2026-10-03 23:27:17,520 | INFO | Records loaded from file: 50
+2026-10-03 23:27:17,521 | INFO | Total raw records for agencies: 350
+2026-10-03 23:27:17,521 | INFO | Reading raw dataset: launcher_configurations
+2026-10-03 23:27:17,521 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations\page_1.json
+2026-10-03 23:27:17,549 | INFO | Records loaded from file: 100
+2026-10-03 23:27:17,549 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations\page_2.json
+2026-10-03 23:27:17,581 | INFO | Records loaded from file: 100
+2026-10-03 23:27:17,581 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations\page_3.json
+2026-10-03 23:27:17,614 | INFO | Records loaded from file: 100
+2026-10-03 23:27:17,615 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations\page_4.json
+2026-10-03 23:27:17,642 | INFO | Records loaded from file: 100
+2026-10-03 23:27:17,642 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations\page_5.json
+2026-10-03 23:27:17,673 | INFO | Records loaded from file: 100
+2026-10-03 23:27:17,673 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations\page_6.json
+2026-10-03 23:27:17,700 | INFO | Records loaded from file: 32
+2026-10-03 23:27:17,700 | INFO | Total raw records for launcher_configurations: 532
+2026-10-03 23:27:17,701 | INFO | Reading raw dataset: pads
+2026-10-03 23:27:17,701 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\pads\page_1.json
+2026-10-03 23:27:17,729 | INFO | Records loaded from file: 100
+2026-10-03 23:27:17,729 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\pads\page_2.json
+2026-10-03 23:27:17,757 | INFO | Records loaded from file: 100
+2026-10-03 23:27:17,757 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\pads\page_3.json
+2026-10-03 23:27:17,790 | INFO | Records loaded from file: 51
+2026-10-03 23:27:17,791 | INFO | Total raw records for pads: 251
+2026-10-03 23:27:17,791 | INFO | Reading raw dataset: launches
+2026-10-03 23:27:17,792 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launches\page_1.json
+2026-10-03 23:27:17,826 | INFO | Records loaded from file: 100
+2026-10-03 23:27:17,826 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launches\page_2.json
+2026-10-03 23:27:17,862 | INFO | Records loaded from file: 100
+2026-10-03 23:27:17,862 | INFO | Total raw records for launches: 200
+2026-10-03 23:27:17,862 | INFO | ======================================================================
+2026-10-03 23:27:17,862 | INFO | TRANSFORMING: AGENCIES
+2026-10-03 23:27:17,862 | INFO | ======================================================================
+2026-10-03 23:27:17,872 | INFO | Duplicate agencies removed: 0
+2026-10-03 23:27:17,886 | INFO | Missing agency country values: 0
+2026-10-03 23:27:17,887 | INFO | Missing agency type values: 0
+2026-10-03 23:27:17,887 | INFO | Processed agency records: 350
+2026-10-03 23:27:17,887 | INFO | ======================================================================
+2026-10-03 23:27:17,887 | INFO | TRANSFORMING: LAUNCHER CONFIGURATIONS
+2026-10-03 23:27:17,889 | INFO | ======================================================================
+2026-10-03 23:27:17,892 | INFO | Duplicate launcher configurations removed: 0
+2026-10-03 23:27:17,895 | INFO | Launcher configuration transformation completed.
+2026-10-03 23:27:17,896 | INFO | Processed records: 532
+2026-10-03 23:27:17,896 | INFO | ======================================================================
+2026-10-03 23:27:17,896 | INFO | TRANSFORMING: PADS
+2026-10-03 23:27:17,897 | INFO | ======================================================================
+2026-10-03 23:27:17,905 | INFO | Duplicate pads removed: 37
+2026-10-03 23:27:17,909 | INFO | Processed pad records: 214
+2026-10-03 23:27:17,909 | INFO | ======================================================================
+2026-10-03 23:27:17,909 | INFO | TRANSFORMING: LAUNCHES
+2026-10-03 23:27:17,909 | INFO | ======================================================================
+2026-10-03 23:27:17,912 | INFO | Duplicate launches removed: 0
+2026-10-03 23:27:17,926 | INFO | Invalid launch records filtered: 0
+2026-10-03 23:27:17,945 | INFO | Launches with unmatched agencies: 0
+2026-10-03 23:27:17,948 | INFO | Launches with unmatched launcher configurations: 0
+2026-10-03 23:27:17,949 | INFO | Launches with unmatched pads: 36
+2026-10-03 23:27:17,950 | INFO | Successful launches: 114
+2026-10-03 23:27:17,951 | INFO | Processed launch records: 200
+2026-10-03 23:27:17,952 | INFO | Successful launch categories: 114
+2026-10-03 23:27:17,952 | INFO | Failure launch categories: 78
+2026-10-03 23:27:17,953 | INFO | Partial failure launches: 8
+2026-10-03 23:27:17,953 | INFO | Launches with orbit classification: 200
+2026-10-03 23:27:17,954 | INFO | Pad turnaround values calculated: 175
+2026-10-03 23:27:17,954 | INFO | Agency launch gap values calculated: 193
+2026-10-03 23:27:17,962 | INFO | Processed data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\processed\agencies.csv
+2026-10-03 23:27:17,965 | INFO | Processed data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\processed\launcher_configurations.csv
+2026-10-03 23:27:17,969 | INFO | Processed data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\processed\pads.csv
+2026-10-03 23:27:17,974 | INFO | Processed data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\processed\launches.csv
+2026-10-03 23:27:17,975 | INFO | ======================================================================
+2026-10-03 23:27:17,975 | INFO | TRANSFORMATION SUMMARY
+2026-10-03 23:27:17,975 | INFO | ======================================================================
+2026-10-03 23:27:17,975 | INFO | Agencies: 350
+2026-10-03 23:27:17,975 | INFO | Launcher configurations: 532
+2026-10-03 23:27:17,975 | INFO | Pads: 214
+2026-10-03 23:27:17,976 | INFO | Launches: 200
+2026-10-03 23:27:17,976 | INFO | ======================================================================
+2026-10-03 23:27:17,976 | INFO | SPACE DATA TRANSFORMATION PIPELINE COMPLETED
+2026-10-03 23:27:17,976 | INFO | ======================================================================
+2026-10-03 23:35:13,219 | INFO | SPACE DATA VALIDATION PIPELINE STARTED
+2026-10-03 23:35:13,219 | INFO | Reading processed file: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\processed\agencies.csv
+2026-10-03 23:35:13,244 | INFO | Reading processed file: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\processed\launcher_configurations.csv
+2026-10-03 23:35:13,265 | INFO | Reading processed file: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\processed\pads.csv
+2026-10-03 23:35:13,280 | INFO | Reading processed file: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\processed\launches.csv
+2026-10-03 23:35:13,296 | INFO | Validating agencies
+2026-10-03 23:35:13,297 | INFO | Validating columns: Agencies
+2026-10-03 23:35:13,297 | INFO | Agencies: Required columns passed
+2026-10-03 23:35:13,297 | INFO | Checking record count: Agencies
+2026-10-03 23:35:13,298 | INFO | Agencies: 350 records found
+2026-10-03 23:35:13,298 | INFO | Checking duplicate IDs: Agencies
+2026-10-03 23:35:13,300 | INFO | Agencies: Duplicate ID check passed
+2026-10-03 23:35:13,300 | INFO | Checking NULL values: Agencies
+2026-10-03 23:35:13,300 | INFO | Agencies: agency_id NULL check passed
+2026-10-03 23:35:13,301 | INFO | Agencies: agency_name NULL check passed
+2026-10-03 23:35:13,301 | INFO | Validating launcher configurations
+2026-10-03 23:35:13,301 | INFO | Validating columns: Launcher configurations
+2026-10-03 23:35:13,301 | INFO | Launcher configurations: Required columns passed
+2026-10-03 23:35:13,302 | INFO | Checking record count: Launcher configurations
+2026-10-03 23:35:13,302 | INFO | Launcher configurations: 532 records found
+2026-10-03 23:35:13,302 | INFO | Checking duplicate IDs: Launcher configurations
+2026-10-03 23:35:13,303 | INFO | Launcher configurations: Duplicate ID check passed
+2026-10-03 23:35:13,303 | INFO | Checking NULL values: Launcher configurations
+2026-10-03 23:35:13,304 | INFO | Launcher configurations: launcher_configuration_id NULL check passed
+2026-10-03 23:35:13,305 | INFO | Launcher configurations: launcher_name NULL check passed
+2026-10-03 23:35:13,305 | INFO | Validating pads
+2026-10-03 23:35:13,305 | INFO | Validating columns: Pads
+2026-10-03 23:35:13,306 | INFO | Pads: Required columns passed
+2026-10-03 23:35:13,306 | INFO | Checking record count: Pads
+2026-10-03 23:35:13,306 | INFO | Pads: 214 records found
+2026-10-03 23:35:13,306 | INFO | Checking duplicate IDs: Pads
+2026-10-03 23:35:13,307 | INFO | Pads: Duplicate ID check passed
+2026-10-03 23:35:13,307 | INFO | Checking NULL values: Pads
+2026-10-03 23:35:13,308 | INFO | Pads: pad_id NULL check passed
+2026-10-03 23:35:13,309 | INFO | Pads: pad_name NULL check passed
+2026-10-03 23:35:13,309 | INFO | Checking range: Pads.latitude
+2026-10-03 23:35:13,311 | INFO | Pads: latitude range check passed
+2026-10-03 23:35:13,311 | INFO | Checking range: Pads.longitude
+2026-10-03 23:35:13,312 | INFO | Pads: longitude range check passed
+2026-10-03 23:35:13,312 | INFO | Validating launches
+2026-10-03 23:35:13,312 | INFO | Validating columns: Launches
+2026-10-03 23:35:13,312 | INFO | Launches: Required columns passed
+2026-10-03 23:35:13,312 | INFO | Checking record count: Launches
+2026-10-03 23:35:13,312 | INFO | Launches: 200 records found
+2026-10-03 23:35:13,312 | INFO | Checking duplicate IDs: Launches
+2026-10-03 23:35:13,312 | INFO | Launches: Duplicate ID check passed
+2026-10-03 23:35:13,312 | INFO | Checking NULL values: Launches
+2026-10-03 23:35:13,312 | INFO | Launches: launch_id NULL check passed
+2026-10-03 23:35:13,314 | INFO | Launches: launch_name NULL check passed
+2026-10-03 23:35:13,314 | INFO | Launches: launch_datetime NULL check passed
+2026-10-03 23:35:13,315 | INFO | Launches: launch_year NULL check passed
+2026-10-03 23:35:13,317 | INFO | Launches: launch_month NULL check passed
+2026-10-03 23:35:13,317 | INFO | Launches: launch_quarter NULL check passed
+2026-10-03 23:35:13,318 | INFO | Launches: status_category NULL check passed
+2026-10-03 23:35:13,318 | INFO | Launches: orbit_class NULL check passed
+2026-10-03 23:35:13,319 | INFO | Checking range: Launches.launch_probability
+2026-10-03 23:35:13,320 | INFO | Launches: launch_probability range check passed
+2026-10-03 23:35:13,320 | INFO | Checking range: Launches.launch_quarter
+2026-10-03 23:35:13,321 | INFO | Launches: launch_quarter range check passed
+2026-10-03 23:35:13,321 | INFO | Checking range: Launches.launch_month
+2026-10-03 23:35:13,322 | INFO | Launches: launch_month range check passed
+2026-10-03 23:35:13,322 | INFO | Checking allowed values: Launches.status_category
+2026-10-03 23:35:13,323 | INFO | Launches: status_category allowed-value check passed
+2026-10-03 23:35:13,324 | INFO | Checking allowed values: Launches.orbit_class
+2026-10-03 23:35:13,325 | INFO | Launches: orbit_class allowed-value check passed
+2026-10-03 23:35:13,327 | INFO | Checking non-negative values: Launches.pad_turnaround_days
+2026-10-03 23:35:13,327 | INFO | Launches: pad_turnaround_days non-negative check passed
+2026-10-03 23:35:13,327 | INFO | Checking non-negative values: Launches.agency_launch_gap_days
+2026-10-03 23:35:13,328 | ERROR | Launches: 19 negative agency_launch_gap_days values found
+2026-10-03 23:35:13,328 | INFO | Checking relationship: Launches -> Agencies
+2026-10-03 23:35:13,329 | INFO | Launches -> Agencies: Foreign key check passed
+2026-10-03 23:35:13,329 | INFO | Checking relationship: Launches -> Launcher Configurations
+2026-10-03 23:35:13,330 | INFO | Launches -> Launcher Configurations: Foreign key check passed
+2026-10-03 23:35:13,332 | INFO | Checking relationship: Launches -> Pads
+2026-10-03 23:35:13,334 | INFO | Launches -> Pads: Foreign key check passed
+2026-10-03 23:35:13,334 | ERROR | VALIDATION FAILED
+2026-10-03 23:35:13,334 | ERROR | Validation pipeline failed: One or more validation checks failed.
+Traceback (most recent call last):
+  File "C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\src\validate.py", line 848, in main
+    raise ValueError(
+ValueError: One or more validation checks failed.
+2026-10-04 10:04:51,732 | INFO | ======================================================================
+2026-10-04 10:04:51,732 | INFO | SPACE DATA TRANSFORMATION PIPELINE STARTED
+2026-10-04 10:04:51,732 | INFO | ======================================================================
+2026-10-04 10:04:51,736 | INFO | Reading raw dataset: agencies
+2026-10-04 10:04:51,736 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\agencies\page_1.json
+2026-10-04 10:04:51,741 | INFO | Records loaded from file: 100
+2026-10-04 10:04:51,741 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\agencies\page_2.json
+2026-10-04 10:04:51,745 | INFO | Records loaded from file: 100
+2026-10-04 10:04:51,747 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\agencies\page_3.json
+2026-10-04 10:04:51,752 | INFO | Records loaded from file: 100
+2026-10-04 10:04:51,754 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\agencies\page_4.json
+2026-10-04 10:04:51,758 | INFO | Records loaded from file: 50
+2026-10-04 10:04:51,759 | INFO | Total raw records for agencies: 350
+2026-10-04 10:04:51,759 | INFO | Reading raw dataset: launcher_configurations
+2026-10-04 10:04:51,761 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations\page_1.json
+2026-10-04 10:04:51,784 | INFO | Records loaded from file: 100
+2026-10-04 10:04:51,786 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations\page_2.json
+2026-10-04 10:04:51,804 | INFO | Records loaded from file: 100
+2026-10-04 10:04:51,804 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations\page_3.json
+2026-10-04 10:04:51,822 | INFO | Records loaded from file: 100
+2026-10-04 10:04:51,822 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations\page_4.json
+2026-10-04 10:04:51,827 | INFO | Records loaded from file: 100
+2026-10-04 10:04:51,840 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations\page_5.json
+2026-10-04 10:04:51,855 | INFO | Records loaded from file: 100
+2026-10-04 10:04:51,855 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launcher_configurations\page_6.json
+2026-10-04 10:04:51,888 | INFO | Records loaded from file: 32
+2026-10-04 10:04:51,889 | INFO | Total raw records for launcher_configurations: 532
+2026-10-04 10:04:51,889 | INFO | Reading raw dataset: pads
+2026-10-04 10:04:51,891 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\pads\page_1.json
+2026-10-04 10:04:51,902 | INFO | Records loaded from file: 100
+2026-10-04 10:04:51,905 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\pads\page_2.json
+2026-10-04 10:04:51,914 | INFO | Records loaded from file: 100
+2026-10-04 10:04:51,916 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\pads\page_3.json
+2026-10-04 10:04:51,922 | INFO | Records loaded from file: 51
+2026-10-04 10:04:51,923 | INFO | Total raw records for pads: 251
+2026-10-04 10:04:51,923 | INFO | Reading raw dataset: launches
+2026-10-04 10:04:51,923 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launches\page_1.json
+2026-10-04 10:04:51,944 | INFO | Records loaded from file: 100
+2026-10-04 10:04:51,944 | INFO | Reading: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\raw\launches\page_2.json
+2026-10-04 10:04:51,961 | INFO | Records loaded from file: 100
+2026-10-04 10:04:51,963 | INFO | Total raw records for launches: 200
+2026-10-04 10:04:51,963 | INFO | ======================================================================
+2026-10-04 10:04:51,963 | INFO | TRANSFORMING: AGENCIES
+2026-10-04 10:04:51,965 | INFO | ======================================================================
+2026-10-04 10:04:51,975 | INFO | Duplicate agencies removed: 0
+2026-10-04 10:04:51,982 | INFO | Missing agency country values: 0
+2026-10-04 10:04:51,982 | INFO | Missing agency type values: 0
+2026-10-04 10:04:51,984 | INFO | Processed agency records: 350
+2026-10-04 10:04:51,984 | INFO | ======================================================================
+2026-10-04 10:04:51,984 | INFO | TRANSFORMING: LAUNCHER CONFIGURATIONS
+2026-10-04 10:04:51,984 | INFO | ======================================================================
+2026-10-04 10:04:51,989 | INFO | Duplicate launcher configurations removed: 0
+2026-10-04 10:04:51,995 | INFO | Launcher configuration transformation completed.
+2026-10-04 10:04:51,995 | INFO | Processed records: 532
+2026-10-04 10:04:51,995 | INFO | ======================================================================
+2026-10-04 10:04:51,995 | INFO | TRANSFORMING: PADS
+2026-10-04 10:04:51,995 | INFO | ======================================================================
+2026-10-04 10:04:52,003 | INFO | Duplicate pads removed: 37
+2026-10-04 10:04:52,009 | INFO | Processed pad records: 214
+2026-10-04 10:04:52,010 | INFO | ======================================================================
+2026-10-04 10:04:52,012 | INFO | TRANSFORMING: LAUNCHES
+2026-10-04 10:04:52,013 | INFO | ======================================================================
+2026-10-04 10:04:52,014 | INFO | Duplicate launches removed: 0
+2026-10-04 10:04:52,031 | INFO | Invalid launch records filtered: 0
+2026-10-04 10:04:52,063 | INFO | Launches with unmatched agencies: 0
+2026-10-04 10:04:52,067 | INFO | Launches with unmatched launcher configurations: 0
+2026-10-04 10:04:52,067 | INFO | Launches with unmatched pads: 36
+2026-10-04 10:04:52,069 | INFO | Successful launches: 114
+2026-10-04 10:04:52,071 | INFO | Processed launch records: 200
+2026-10-04 10:04:52,073 | INFO | Successful launch categories: 114
+2026-10-04 10:04:52,073 | INFO | Failure launch categories: 78
+2026-10-04 10:04:52,074 | INFO | Partial failure launches: 8
+2026-10-04 10:04:52,074 | INFO | Launches with orbit classification: 200
+2026-10-04 10:04:52,074 | INFO | Pad turnaround values calculated: 175
+2026-10-04 10:04:52,074 | INFO | Agency launch gap values calculated: 193
+2026-10-04 10:04:52,077 | INFO | Processed data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\processed\agencies.csv
+2026-10-04 10:04:52,086 | INFO | Processed data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\processed\launcher_configurations.csv
+2026-10-04 10:04:52,091 | INFO | Processed data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\processed\pads.csv
+2026-10-04 10:04:52,099 | INFO | Processed data saved to: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\processed\launches.csv
+2026-10-04 10:04:52,099 | INFO | ======================================================================
+2026-10-04 10:04:52,099 | INFO | TRANSFORMATION SUMMARY
+2026-10-04 10:04:52,099 | INFO | ======================================================================
+2026-10-04 10:04:52,102 | INFO | Agencies: 350
+2026-10-04 10:04:52,104 | INFO | Launcher configurations: 532
+2026-10-04 10:04:52,105 | INFO | Pads: 214
+2026-10-04 10:04:52,105 | INFO | Launches: 200
+2026-10-04 10:04:52,105 | INFO | ======================================================================
+2026-10-04 10:04:52,105 | INFO | SPACE DATA TRANSFORMATION PIPELINE COMPLETED
+2026-10-04 10:04:52,105 | INFO | ======================================================================
+2026-10-04 10:05:02,786 | INFO | SPACE DATA VALIDATION PIPELINE STARTED
+2026-10-04 10:05:02,786 | INFO | Reading processed file: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\processed\agencies.csv
+2026-10-04 10:05:02,826 | INFO | Reading processed file: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\processed\launcher_configurations.csv
+2026-10-04 10:05:02,850 | INFO | Reading processed file: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\processed\pads.csv
+2026-10-04 10:05:02,866 | INFO | Reading processed file: C:\Users\ipran\Documents\demo\Assignment3_space_data_pipeline\data\processed\launches.csv
+2026-10-04 10:05:02,881 | INFO | Validating agencies
+2026-10-04 10:05:02,945 | INFO | Validating columns: Agencies
+2026-10-04 10:05:02,946 | INFO | Agencies: Required columns passed
+2026-10-04 10:05:02,946 | INFO | Checking record count: Agencies
+2026-10-04 10:05:02,946 | INFO | Agencies: 350 records found
+2026-10-04 10:05:02,946 | INFO | Checking duplicate IDs: Agencies
+2026-10-04 10:05:02,946 | INFO | Agencies: Duplicate ID check passed
+2026-10-04 10:05:02,948 | INFO | Checking NULL values: Agencies
+2026-10-04 10:05:02,968 | INFO | Agencies: agency_id NULL check passed
+2026-10-04 10:05:02,974 | INFO | Agencies: agency_name NULL check passed
+2026-10-04 10:05:02,974 | INFO | Validating launcher configurations
+2026-10-04 10:05:02,974 | INFO | Validating columns: Launcher configurations
+2026-10-04 10:05:02,974 | INFO | Launcher configurations: Required columns passed
+2026-10-04 10:05:02,974 | INFO | Checking record count: Launcher configurations
+2026-10-04 10:05:02,974 | INFO | Launcher configurations: 532 records found
+2026-10-04 10:05:02,974 | INFO | Checking duplicate IDs: Launcher configurations
+2026-10-04 10:05:02,976 | INFO | Launcher configurations: Duplicate ID check passed
+2026-10-04 10:05:02,976 | INFO | Checking NULL values: Launcher configurations
+2026-10-04 10:05:02,976 | INFO | Launcher configurations: launcher_configuration_id NULL check passed
+2026-10-04 10:05:02,976 | INFO | Launcher configurations: launcher_name NULL check passed
+2026-10-04 10:05:02,976 | INFO | Validating pads
+2026-10-04 10:05:02,976 | INFO | Validating columns: Pads
+2026-10-04 10:05:02,976 | INFO | Pads: Required columns passed
+2026-10-04 10:05:02,976 | INFO | Checking record count: Pads
+2026-10-04 10:05:02,976 | INFO | Pads: 214 records found
+2026-10-04 10:05:02,977 | INFO | Checking duplicate IDs: Pads
+2026-10-04 10:05:02,977 | INFO | Pads: Duplicate ID check passed
+2026-10-04 10:05:02,977 | INFO | Checking NULL values: Pads
+2026-10-04 10:05:02,977 | INFO | Pads: pad_id NULL check passed
+2026-10-04 10:05:02,977 | INFO | Pads: pad_name NULL check passed
+2026-10-04 10:05:02,977 | INFO | Checking range: Pads.latitude
+2026-10-04 10:05:02,977 | INFO | Pads: latitude range check passed
+2026-10-04 10:05:02,983 | INFO | Checking range: Pads.longitude
+2026-10-04 10:05:02,985 | INFO | Pads: longitude range check passed
+2026-10-04 10:05:02,986 | INFO | Validating launches
+2026-10-04 10:05:02,986 | INFO | Validating columns: Launches
+2026-10-04 10:05:02,986 | INFO | Launches: Required columns passed
+2026-10-04 10:05:02,986 | INFO | Checking record count: Launches
+2026-10-04 10:05:02,986 | INFO | Launches: 200 records found
+2026-10-04 10:05:02,986 | INFO | Checking duplicate IDs: Launches
+2026-10-04 10:05:02,989 | INFO | Launches: Duplicate ID check passed
+2026-10-04 10:05:02,989 | INFO | Checking NULL values: Launches
+2026-10-04 10:05:02,989 | INFO | Launches: launch_id NULL check passed
+2026-10-04 10:05:02,989 | INFO | Launches: launch_name NULL check passed
+2026-10-04 10:05:02,989 | INFO | Launches: launch_datetime NULL check passed
+2026-10-04 10:05:02,989 | INFO | Launches: launch_year NULL check passed
+2026-10-04 10:05:02,989 | INFO | Launches: launch_month NULL check passed
+2026-10-04 10:05:02,989 | INFO | Launches: launch_quarter NULL check passed
+2026-10-04 10:05:02,989 | INFO | Launches: status_category NULL check passed
+2026-10-04 10:05:02,989 | INFO | Launches: orbit_class NULL check passed
+2026-10-04 10:05:02,989 | INFO | Checking range: Launches.launch_probability
+2026-10-04 10:05:02,989 | INFO | Launches: launch_probability range check passed
+2026-10-04 10:05:02,989 | INFO | Checking range: Launches.launch_quarter
+2026-10-04 10:05:02,989 | INFO | Launches: launch_quarter range check passed
+2026-10-04 10:05:02,989 | INFO | Checking range: Launches.launch_month
+2026-10-04 10:05:02,989 | INFO | Launches: launch_month range check passed
+2026-10-04 10:05:02,989 | INFO | Checking allowed values: Launches.status_category
+2026-10-04 10:05:02,997 | INFO | Launches: status_category allowed-value check passed
+2026-10-04 10:05:02,997 | INFO | Checking allowed values: Launches.orbit_class
+2026-10-04 10:05:02,997 | INFO | Launches: orbit_class allowed-value check passed
+2026-10-04 10:05:02,999 | INFO | Checking non-negative values: Launches.pad_turnaround_days
+2026-10-04 10:05:02,999 | INFO | Launches: pad_turnaround_days non-negative check passed
+2026-10-04 10:05:02,999 | INFO | Checking non-negative values: Launches.agency_launch_gap_days
+2026-10-04 10:05:03,001 | INFO | Launches: agency_launch_gap_days non-negative check passed
+2026-10-04 10:05:03,001 | INFO | Checking relationship: Launches -> Agencies
+2026-10-04 10:05:03,003 | INFO | Launches -> Agencies: Foreign key check passed
+2026-10-04 10:05:03,005 | INFO | Checking relationship: Launches -> Launcher Configurations
+2026-10-04 10:05:03,005 | INFO | Launches -> Launcher Configurations: Foreign key check passed
+2026-10-04 10:05:03,007 | INFO | Checking relationship: Launches -> Pads
+2026-10-04 10:05:03,007 | INFO | Launches -> Pads: Foreign key check passed
+2026-10-04 10:05:03,011 | INFO | ALL VALIDATION CHECKS PASSED
