@@ -1,4 +1,5 @@
 # Assignment3_space_data_pipeline
+
 ## What the Pipeline Does
 
 This project implements an end-to-end ETL pipeline for space mission and launch data.
@@ -7,23 +8,25 @@ The pipeline retrieves launch-related data from an external space API, preserves
 
 The pipeline follows this flow:
 
+```text
                            Space API
                               ↓
                            EXTRACT
                               ↓
-                           Raw JSON Data
+                         Raw JSON Data
                               ↓
-                           TRANSFORM
+                          TRANSFORM
                               ↓
-                           Processed Data
+                       Processed Data
                               ↓
-                           VALIDATE
+                          VALIDATE
                               ↓
-                           LOAD
+                            LOAD
                               ↓
-                           SQL Server Database
+                    SQL Server Database
                               ↓
-                           Database Validation and Analytical Queries
+              Database Validation and Analytical Queries
+```
 
 The pipeline is designed to be repeatable and reliable. Raw API responses are stored separately from processed data so that transformation logic can be changed and the previously extracted data can be processed again without depending on another API request.
 
@@ -32,6 +35,7 @@ The pipeline is designed to be repeatable and reliable. Raw API responses are st
 The pipeline uses The Space Devs — Launch Library API to retrieve space launch and mission-related information.
 
 API:
+
 https://thespacedevs.com/llapi
 
 Base API URL used by the extraction layer:
@@ -48,6 +52,7 @@ The pipeline currently retrieves data from the following endpoints:
 These datasets are used to build the relational database structure required for launch analytics.
 
 The `launches` dataset contains the main launch records, while agencies, launcher configurations, and pads provide related information that can be connected through foreign-key relationships during transformation and loading.
+
 ## Extraction Approach
 
 The extraction layer retrieves data programmatically from The Space Devs Launch Library API using HTTP GET requests.
@@ -79,6 +84,7 @@ A reusable `extract_endpoint()` function is used so that the same extraction log
 
 The original API responses are stored separately under the raw-data layer:
 
+```text
 data/raw/
 
     launches/
@@ -96,6 +102,7 @@ data/raw/
     pads/
         page_1.json
         ...
+```
 
 The raw data is preserved so that the transformation layer can be re-run if transformation rules change in the future.
 
@@ -156,6 +163,8 @@ launcher_configurations.launcher_configuration_id
 launches.pad_id
         ↓
 pads.pad_id
+```
+
 ## Database Schema
 
 The processed datasets are loaded into four relational tables in SQL Server:
@@ -190,12 +199,10 @@ launcher_configurations.launcher_configuration_id
 launches.pad_id
         ↓
 pads.pad_id
+```
 
+## Loading Strategy
 
-
-##  Loading Strategy
-
-```markdown
 The processed CSV files are loaded into SQL Server using `pyodbc`.
 
 The tables are loaded in dependency order:
@@ -208,10 +215,10 @@ launcher_configurations
 pads
     ↓
 launches
+```
 
-##  Transaction Strategy
+## Transaction Strategy
 
-```markdown
 The loading process uses transactions at the batch level.
 
 For each batch:
@@ -224,10 +231,10 @@ Database operations
 Success → COMMIT
       ↓
 Failure → ROLLBACK
+```
 
 ## Error Handling
 
-```markdown
 The pipeline includes error handling across the extraction, transformation, validation, and loading stages.
 
 Database operations handle `pyodbc.Error` exceptions and:
@@ -252,10 +259,10 @@ load
 failure
    ↓
 pipeline stops
+```
 
 ## Retry Strategy
 
-```markdown
 The extraction layer implements retry handling for temporary API failures.
 
 The API requests use:
@@ -272,6 +279,7 @@ Temporary failures are retried because they may recover on a later request.
 Permanent client-side errors are not repeatedly retried.
 
 Database loading does not automatically retry failed transactions. If a database batch fails, the batch is rolled back and the pipeline stops so that the failure can be investigated.
+
 ## Idempotency
 
 The loading process is designed to be idempotent.
@@ -286,10 +294,10 @@ Record already exists
 Record does not exist
         ↓
       INSERT
+```
 
 ## Configuration
 
-```markdown
 Database and pipeline configuration values are stored in the `.env` file instead of being hardcoded in the Python source code.
 
 Current configuration:
@@ -301,6 +309,7 @@ DB_DATABASE=student4
 DB_TRUSTED_CONNECTION=yes
 DB_TRUST_SERVER_CERTIFICATE=yes
 BATCH_SIZE=500
+```
 
 ## How to Run the Project
 
