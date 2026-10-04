@@ -1,0 +1,21 @@
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Pipeline logs
+logs/
+
+# Raw API data
+data/raw/
+
+# Processed/generated data
+data/processed/
+
