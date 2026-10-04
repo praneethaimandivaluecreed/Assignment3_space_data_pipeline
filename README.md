@@ -122,3 +122,37 @@ The transformation layer reads the preserved raw JSON data, cleans and standardi
 - `orbit_class` — groups detailed orbit types into broader categories such as Earth Orbit and Lunar/Planetary.
 - `pad_turnaround_days` — days between consecutive launches from the same pad.
 - `agency_launch_gap_days` — days between consecutive launches by the same agency.
+
+## Validation Approach
+
+The validation layer checks the processed datasets before they are loaded into SQL Server. It ensures that the transformed data has the expected structure, valid values, unique identifiers, and correct relationships between related datasets.
+
+### Validation Checks
+
+The following validations are performed:
+
+- **Dataset validation** — verifies that processed datasets are not empty and contain the expected number of records.
+- **Column validation** — checks that all required columns are present.
+- **Duplicate validation** — checks for duplicate primary-key values.
+- **Required-field validation** — verifies that important fields such as IDs, names, dates, and derived fields are not NULL.
+- **Range validation** — validates numeric values such as latitude, longitude, launch probability, month, and quarter.
+- **Category validation** — ensures that `status_category` and `orbit_class` contain only the expected values.
+- **Derived-column validation** — verifies that `launch_year`, `launch_month`, `launch_quarter`, `pad_turnaround_days`, and `agency_launch_gap_days` contain valid values.
+- **Foreign-key validation** — checks relationships between launches and the related agencies, launcher configurations, and pads.
+
+### Foreign-Key Relationships
+
+The following relationships are validated:
+
+```text
+launches.agency_id
+        ↓
+agencies.agency_id
+
+launches.launcher_configuration_id
+        ↓
+launcher_configurations.launcher_configuration_id
+
+launches.pad_id
+        ↓
+pads.pad_id
