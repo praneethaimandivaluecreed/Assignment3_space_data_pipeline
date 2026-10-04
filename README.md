@@ -191,7 +191,7 @@ launches.pad_id
         ↓
 pads.pad_id
 
----
+
 
 ##  Loading Strategy
 
@@ -209,9 +209,6 @@ pads
     ↓
 launches
 
-
----
-
 ##  Transaction Strategy
 
 ```markdown
@@ -227,8 +224,6 @@ Database operations
 Success → COMMIT
       ↓
 Failure → ROLLBACK
-
----
 
 ## Error Handling
 
@@ -257,8 +252,6 @@ load
 failure
    ↓
 pipeline stops
-
----
 
 ## Retry Strategy
 
@@ -294,9 +287,6 @@ Record does not exist
         ↓
       INSERT
 
-
----
-
 ## Configuration
 
 ```markdown
@@ -311,7 +301,6 @@ DB_DATABASE=student4
 DB_TRUSTED_CONNECTION=yes
 DB_TRUST_SERVER_CERTIFICATE=yes
 BATCH_SIZE=500
----
 
 ## How to Run the Project
 
