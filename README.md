@@ -156,3 +156,169 @@ launcher_configurations.launcher_configuration_id
 launches.pad_id
         ↓
 pads.pad_id
+## Database Schema
+
+The processed datasets are loaded into four relational tables in SQL Server:
+
+- `agencies` — stores space agency information.
+- `launcher_configurations` — stores launcher configuration and manufacturer information.
+- `pads` — stores launch pad and location information.
+- `launches` — stores launch-level information and references the related agency, launcher configuration, and pad.
+
+### Primary Keys
+
+Each table has a primary key:
+
+- `agencies.agency_id`
+- `launcher_configurations.launcher_configuration_id`
+- `pads.pad_id`
+- `launches.launch_id`
+
+### Foreign Keys
+
+The `launches` table contains foreign keys to the related dimension tables:
+
+```text
+launches.agency_id
+        ↓
+agencies.agency_id
+
+launches.launcher_configuration_id
+        ↓
+launcher_configurations.launcher_configuration_id
+
+launches.pad_id
+        ↓
+pads.pad_id
+
+---
+
+##  Loading Strategy
+
+```markdown
+The processed CSV files are loaded into SQL Server using `pyodbc`.
+
+The tables are loaded in dependency order:
+
+```text
+agencies
+    ↓
+launcher_configurations
+    ↓
+pads
+    ↓
+launches
+
+
+---
+
+##  Transaction Strategy
+
+```markdown
+The loading process uses transactions at the batch level.
+
+For each batch:
+
+```text
+Process records
+      ↓
+Database operations
+      ↓
+Success → COMMIT
+      ↓
+Failure → ROLLBACK
+
+---
+
+## Error Handling
+
+```markdown
+The pipeline includes error handling across the extraction, transformation, validation, and loading stages.
+
+Database operations handle `pyodbc.Error` exceptions and:
+
+- Log the error.
+- Roll back the affected batch.
+- Stop the loading process.
+
+The main pipeline also checks the return code of every pipeline step.
+
+If any step fails, the pipeline stops immediately and the remaining steps are not executed.
+
+```text
+extract
+   ↓
+transform
+   ↓
+validate
+   ↓
+load
+   ↓
+failure
+   ↓
+pipeline stops
+
+---
+
+## Retry Strategy
+
+```markdown
+The extraction layer implements retry handling for temporary API failures.
+
+The API requests use:
+
+- Request timeout
+- Multiple attempts
+- Retry delays
+- Handling for connection errors
+- Handling for request timeouts
+- Handling for temporary server-side errors
+
+Temporary failures are retried because they may recover on a later request.
+
+Permanent client-side errors are not repeatedly retried.
+
+Database loading does not automatically retry failed transactions. If a database batch fails, the batch is rolled back and the pipeline stops so that the failure can be investigated.
+## Idempotency
+
+The loading process is designed to be idempotent.
+
+Before inserting a record, the loader checks whether the record already exists using its primary key.
+
+```text
+Record already exists
+        ↓
+      UPDATE
+
+Record does not exist
+        ↓
+      INSERT
+
+
+---
+
+## Configuration
+
+```markdown
+Database and pipeline configuration values are stored in the `.env` file instead of being hardcoded in the Python source code.
+
+Current configuration:
+
+```env
+DB_DRIVER=ODBC Driver 17 for SQL Server
+DB_SERVER=.\SQLEXPRESS
+DB_DATABASE=student4
+DB_TRUSTED_CONNECTION=yes
+DB_TRUST_SERVER_CERTIFICATE=yes
+BATCH_SIZE=500
+---
+
+## How to Run the Project
+
+1. Install dependencies: `pip install -r requirements.txt`
+2. Create the `.env` file in the project root.
+3. Open SSMS and create the `student4` database.
+4. Run the SQL scripts in this order: `agencies` → `launcher_configurations` → `pads` → `launches`.
+5. From the project root, run: `python src\main.py`
+6. Check the pipeline log at: `logs/pipeline.log`
+7. Verify the loaded data in SSMS.
